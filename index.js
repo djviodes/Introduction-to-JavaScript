@@ -194,7 +194,7 @@ function vowelCount(string){
     return counter;
 }
 
-vowelCount('The quick fox jumped over the lazy brown dog.');
+vowelCount('Nittacus Wittacus.');
 
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
@@ -208,7 +208,7 @@ let userChoice2 = prompt('Enter your Choice!').toLowerCase();
 
 console.log(computerChoice2, userChoice2);
 
-function roeShamBoe(computerChoice2, userChoice2){
+function roeShamBoe2(computerChoice2, userChoice2){
     if(userChoice2 == 'rock'){
         userChoice2 = 0;
     } else if (userChoice2 == 'paper'){
@@ -216,7 +216,7 @@ function roeShamBoe(computerChoice2, userChoice2){
     } else if (userChoice2 == 'scissors'){
         userChoice2 = 2;
     } else {
-        console.log('Do you even know how to play Rock, Paper, Scissors?');
+        return 'Do you even know how to play Rock, Paper, Scissors?';
     }
     if (computerChoice2 === 2 && userChoice2 === 2){
         return 'It is a tie! Try again.';
@@ -241,6 +241,6 @@ function roeShamBoe(computerChoice2, userChoice2){
     }
 }
 
-console.log(roeShamBoe(computerChoice2, userChoice2));
+console.log(roeShamBoe2(computerChoice2, userChoice2));
 
 
