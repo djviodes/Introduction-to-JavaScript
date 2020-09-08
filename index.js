@@ -189,6 +189,47 @@ console.log(grades(95));
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
 
+let computerPlay2 = Math.floor(Math.random() * 3);
 
+let computerChoice2 = computerPlay2
+
+let userChoice2 = prompt('Enter your Choice!').toLowerCase();
+
+console.log(computerChoice2, userChoice2);
+
+function roeShamBoe(computerChoice2, userChoice2){
+    if(userChoice2 == 'rock'){
+        userChoice2 = 0;
+    } else if (userChoice2 == 'paper'){
+        userChoice2 = 1;
+    } else if (userChoice2 == 'scissors'){
+        userChoice2 = 2;
+    } else {
+        console.log('Do you even know how to play Rock, Paper, Scissors?');
+    }
+    if (computerChoice2 === 2 && userChoice2 === 2){
+        return 'It is a tie! Try again.';
+    } else if (computerChoice2 === 2 && userChoice2 === 1){
+        return 'You lose... Scissors beats Paper.';
+    } else if (computerChoice2 === 2 && userChoice2 === 0){
+        return 'You WIN! Rock beats Scissors.';
+    } else if (computerChoice2 === 1 && userChoice2 === 2){
+        return 'You WIN! Scissors beats Paper.';
+    } else if (computerChoice2 === 1 && userChoice2 === 1){
+        return 'It is a tie! Try again.';
+    } else if (computerChoice2 === 1 && userChoice2 === 0){
+        return 'You lose... Paper beats Rock';
+    } else if (computerChoice2 === 0 && userChoice2 === 2){
+        return 'You lose... Rock beats Scissors';
+    } else if (computerChoice2 === 0 && userChoice2 === 1){
+        return 'You WIN! Paper beats Rock.';
+    } else if (computerChoice2 === 0 && userChoice2 === 0){
+        return 'It is a tie! Try again.';
+    } else {
+        return 'This should have never happened. Please try again.';
+    }
+}
+
+console.log(roeShamBoe(computerChoice2, userChoice2));
 
 
