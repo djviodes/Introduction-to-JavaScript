@@ -1,10 +1,12 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
-let votingAge = 24;
+let votingAge = 17;
 
 if(votingAge > 18){
     console.log('true');
+} else {
+    console.log('false');
 }
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
@@ -122,15 +124,19 @@ console.log(food(15, 1));
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
+function metricConverter(kilometers){
+    return kilometers * 0.621371;
+}
 
-
-
+console.log(metricConverter(5));
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
+function feetToCm(feet){
+    return feet * 30.48;
+}
 
-
-
+console.log(feetToCm(5));
 
 /************************************************************** Task 6 **************************************************************/
 // 99 bottles of soda on the wall
