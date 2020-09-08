@@ -88,8 +88,35 @@ console.log(food(15, 1));
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
+ let computerPlay = Math.floor(Math.random() * 3);
+
+ let computerChoice = computerPlay
   
-  
+ function roeShamBoe(computerChoice, userChoice){
+    if (computerChoice === 2 && userChoice === 2){
+        return 'It is a tie! Try again.';
+    } else if (computerChoice === 2 && userChoice === 1){
+        return 'You lose... Scissors beats Paper.';
+    } else if (computerChoice === 2 && userChoice === 0){
+        return 'You WIN! Rock beats Scissors.';
+    } else if (computerChoice === 1 && userChoice === 2){
+        return 'You WIN! Scissors beats Paper.';
+    } else if (computerChoice === 1 && userChoice === 1){
+        return 'It is a tie! Try again.';
+    } else if (computerChoice === 1 && userChoice === 0){
+        return 'You lose... Paper beats Rock';
+    } else if (computerChoice === 0 && userChoice === 2){
+        return 'You lose... Rock beats Scissors';
+    } else if (computerChoice === 0 && userChoice === 1){
+        return 'You WIN! Paper beats Rock.';
+    } else if (computerChoice === 0 && userChoice === 0){
+        return 'It is a tie! Try again.';
+    } else {
+        return 'This should have never happened. Please try again.'
+    }
+ }
+
+ console.log(roeShamBoe(computerChoice, 2));
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
