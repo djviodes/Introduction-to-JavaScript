@@ -181,9 +181,20 @@ console.log(grades(95));
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
 
+const vowels = ['a', 'e', 'i', 'o', 'u'];
 
+function vowelCount(string){
+    let counter = 0;
+    for (let letter of string.toLowerCase()){
+        if (vowels.includes(letter)){
+            counter++
+        }
+    }
+    console.log(`The text contains ${counter} vowel(s)`);
+    return counter;
+}
 
-
+vowelCount('The quick fox jumped over the lazy brown dog.');
 
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
